@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/register.css">
     <title>Login</title>
 </head>
 
@@ -16,9 +16,9 @@
             <input type="text" name="name" placeholder="write your full name" class="input">
             <input type="text" name="mail" placeholder="write your mail" class="input">
             <input type="text" name="username" placeholder="write your Username" class="input">
-            <input type="password" placeholder="write your password" class="input">
+            <input type="password" name="password" placeholder="write your password" class="input">
             <input type="submit" value="Register" class="btn">
-            <p class="cnx">Vous avez deja un compte? <a href="index.php">Connectez-vous?</a></p>
+            <p class="cnx">Vous avez deja un compte? <a href="../index.php">Connectez-vous?</a></p>
         </form>
     </div>
 

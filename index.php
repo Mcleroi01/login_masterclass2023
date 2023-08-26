@@ -15,7 +15,7 @@
         <form action="src/traitement/login_controleur.php" class="form" method="post">
             <p>Login</p>
             <input type="email" name="mail" placeholder="write your mail" class="input" id="mail">
-            <input type="password" name="psw" placeholder="write your password" id="psw" class="input">
+            <input type="password" name="password" placeholder="write your password" id="psw" class="input">
             <input type="submit" value="Login" class="btn" src="portail.php">
             <p class="cnx">Vous n'avez pas de compte? <a href="pages/register.php">Creer un compte?</a></p>
 

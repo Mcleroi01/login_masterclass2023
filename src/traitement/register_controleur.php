@@ -1,9 +1,5 @@
 <?php
 
-ini_set('display_errors', '0');
-
-
-
 // 
 
 if (isset($_POST['name']) and isset($_POST['mail']) and isset($_POST['username']) and isset($_POST['password'])) {
