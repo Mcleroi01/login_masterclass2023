@@ -1,3 +1,16 @@
+<?php 
+
+session_status();
+$_SESSION['autorise'] = true;
+
+
+if ($_SESSION['autorise'] == true) {
+    
+    header('Location: ../index.php');
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +18,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/portail.css">
+    <link rel="stylesheet" href="../css/portail.css">
     <title>Document</title>
 </head>
 
@@ -16,11 +29,16 @@
             <p class="wlc">Welcome in your compte,Carlo Ngoy</p>
             <p>@mcleroi</p>
             <p>musongelacarlo54@gamil.com</p>
-            <input type="button" value="LogOut" class="btn">
+            <form action="" method="post">
+                
+                <input type="button" value="LogOut" class="btn">
+
+            </form>
+
 
         </div>
-        
-    
+
+
 
     </div>
 
