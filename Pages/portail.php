@@ -1,8 +1,14 @@
 <!-- <?php
-        require_once('../src/model/auth.php');
 
-        Autorise();
-      
+        if ($_SESSION['connecter']) {
+
+            header('Location:portail.php');
+           
+        }else {
+            header('Location:../index.php');
+        }
+
+
 
 
         ?> -->
@@ -26,9 +32,9 @@
             <p class="wlc">Welcome in your compte,<?php echo $_SESSION['name']; ?></p>
             <p>@<?php echo $_SESSION['user']; ?></p>
             <p><?php echo $_SESSION['mail'];  ?></p>
-            <form action="" method="post">
+            <form action="../src/traitement/logout_controler.php" method="post">
 
-                <input type="button" value="LogOut" class="btn">
+                <input type="submit" value="LogOut" class="btn">
 
             </form>
 

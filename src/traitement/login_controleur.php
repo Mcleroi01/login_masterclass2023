@@ -10,8 +10,9 @@ if (isset($_POST['mail']) and isset($_POST['password'])) {
     $user = Login($_POST['mail'],$_POST['password']);
     if ($user) {
 
-        Autorise();
+        $_SESSION['connecter']=$_POST['mail'];
         header('Location: ../../Pages/portail.php');
+
 
     } else {
         

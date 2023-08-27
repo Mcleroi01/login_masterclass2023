@@ -13,7 +13,7 @@
 
 
     <footer>
-        @copyright <?php echo date("y") ?>
+        @copyright <?php echo date("Y") ?>
     </footer>
 </body>
 
