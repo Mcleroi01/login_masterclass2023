@@ -1,3 +1,16 @@
+<?php
+session_start();
+
+if (isset($_SESSION['Connecter'])) {
+    header('Location:pages/portail.php');
+    exit();
+}else {
+    
+}
+
+
+
+?> 
 <!DOCTYPE html>
 <html lang="en">
 

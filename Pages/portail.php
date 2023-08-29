@@ -1,17 +1,19 @@
-<!-- <?php
-
-        if ($_SESSION['connecter']) {
-
-            header('Location:portail.php');
-           
-        }else {
-            header('Location:../index.php');
-        }
+<?php
+require_once('../src/model/auth.php');
 
 
 
+if (!isset($_SESSION['Connecter'])) {
+    header('Location:../index.php');
+    exit();
+}else {
+    
+}
 
-        ?> -->
+
+
+
+?> 
 
 
 <!DOCTYPE html>
@@ -22,7 +24,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/portail.css">
-    <title>Document</title>
+    <title>Gree</title>
 </head>
 
 <body>

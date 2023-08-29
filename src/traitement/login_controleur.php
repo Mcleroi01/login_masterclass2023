@@ -7,7 +7,7 @@ if (isset($_POST['mail']) and isset($_POST['password'])) {
 
     require_once('../model/auth.php');
 
-    $user = Login($_POST['mail'],$_POST['password']);
+    $_SESSION['Connecter'] = Login($_POST['mail'],$_POST['password']);
     if ($user) {
 
         $_SESSION['connecter']=$_POST['mail'];
